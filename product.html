@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="index.css" rel="stylesheet" >
+    <style>
+
+        #stproduct{
+            width: 1491px;
+            height: 1200px;
+            background-color: #17a2d9;
+        }
+        
+        
+        .wrapper .hv1{
+            
+            width: 70%;
+            
+            position: absolute;
+            left: 50px;
+            z-index: 2;
+            transition: ease 0.5s;
+        }
+        .wrapper .card{
+            margin-left: 21px;
+            margin-top: 20px;
+            width: 280px;
+            height: 400px;
+            background-color: #eddd70;
+            border-radius: 16px;
+            padding: 64px 32px 0;
+            color: white;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            
+        }
+        .card-data{
+            transform: translateY(180px);
+            text-align: center;
+            
+        }
+        .card-title{
+            font-size: 28px;
+            color: #fd5b60;
+            margin-bottom: 8px;
+            transition: ease 0.8s;
+        }
+        .card-preci{
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            transition: ease 0.8s;
+        }
+        .card-des{
+            font-size: 14px;
+            text-align: initial;
+            margin-bottom: 20px;
+            opacity: 0;
+            transition: ease 0.8s;
+            position: relative;
+            left: 65px;
+        }
+        .card-button{
+            background-color: #17a2d9;
+            padding: 8px 28px 8px 28px;
+            text-decoration: none;
+            border-radius: 10px;
+            opacity: 0;
+            
+            transition: ease 0.8s;
+            position: relative;
+            top:  50px;
+            right: 80px;
+        }
+        .card input{
+            width: 120px;
+            height: 30px;
+            border-radius: 13px;
+            position: relative;
+            top:23px;
+            left: 66px;
+            opacity: 0;
+            transition: ease 0.5s;
+        }
+        
+        .card:hover .hv1{
+            transform: scale(1.2);
+            
+        }
+        
+        .card:hover .card-title{
+            opacity: 0;
+        }
+        .card:hover .card-preci{
+            transform: scale(1.8);
+        }
+        .card:hover .card-button{
+            opacity: 1;
+            
+        }
+        .card:hover .card-des{
+            opacity: 1;
+            
+        }
+        
+        
+        .card:hover .ly{
+            opacity: 1;
+        }
+        .card:hover input{
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <img  src="pepsi.png" alt="" />
+        <div id="menu">
+            <ul >
+                <li class="animate__animated animate__jello animate__delay-3s animate__slower animate__infinite" ><a  href="index.html">Home</a></li>
+                <li class="animate__animated animate__jello animate__delay-3s animate__slower animate__infinite" ><a  href="product.html">New product</a></li>
+                <li class="animate__animated animate__jello animate__delay-3s animate__slower animate__infinite" ><a  href="persistent.html">Persistent</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="stproduct">
+    <div class="hangmot">
+        <div class="wrapper">
+            <div data-aos="fade-up" class="card">
+                <img class="hv1" src="can1.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Nitro</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Nitro Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang1()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can1" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div data-aos="flip-left" class="card">
+                <img class="hv1" src="can2.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Cafe</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Cafe Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang2()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can2"/></form>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div data-aos="flip-up" class="card">
+                <img class="hv1" src="can3.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Lemon</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Cafe</p>
+                    <a href="#" class="card-button" onclick="giohang3()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can3"/></form>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div  class="card">
+                <img class="hv1" src="can4.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Lemon</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi True Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang4()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can4"/></form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div  class="card">
+                <img class="hv1" src="can5.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi True</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Soda Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang5()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can5"/></form>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div  class="card">
+                <img class="hv1" src="can6.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Diet</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Diet Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang6()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can6"/></form>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div  class="wrapper">
+            <div class="card">
+                <img class="hv1" src="can7.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi RealSugar</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi RealSugar Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang7()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can7"/></form>
+                </div>
+            </div>
+        </div>
+        <div  class="wrapper">
+            <div class="card">
+                <img class="hv1" src="can8.png" alt="" />
+                
+                <div class="card-data">
+                    <div class="card-title">Pepsi Diet</div>
+                    <span class="card-preci">$2.00</span>
+                    <p class="card-des">Pepsi Diet Soft Drink</p>
+                    <a href="#" class="card-button" onclick="giohang8()">Buy Now</a>
+                    <form><input type="number" min="0" placeholder="enter number" id="can8"/></form>
+                </div>
+            </div>
+        </div>
+       
+        
+    
+    </section>
+    
+
+    <footer id="ft">
+        <div id="khung">
+            <h3>SUNTORY PEPSICO Beverage CO., LTD in VIETNAM</h3>
+            <i class="material-icons" style="font-size:36px">settings_ethernet</i><p>tax code: 0300816663</p>
+            <i class="material-icons" style="font-size:36px">tag_faces</i><p>representative: JAHANZEB QAYUM KHAN</p>
+            <i class="material-icons" style="font-size:36px">store</i><p>Address: Sheraton Building, 88 Dong Khoi Street, Ben Nghe Ward, District 1, Ho Chi Minh City, Vietnam</p>
+        </div>
+        <img src="pepsilike.png" alt="" />
+        <form>
+            <label>Get the Latest News & Updates</label><br>
+            <input type="email" placeholder="EMAIL" /> <button>JOIN</button>
+        </form>
+        <a href="#"><img id="fb" src="facebook-icon.png" /></a>
+        <a href="#"><img id="zl" src="zalo.jpg" /></a>
+        <a href="#"><img id="tw" src="tw.png" /></a>
+        <p id="end">@created by Nguyen Duc Hoang Duong</p>
+    </footer>
+  
+    
+    <script>
+        AOS.init();
+      </script>
+
+    <script>
+        function giohang1(){
+       var a = document.getElementById("can1");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Nitro with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+
+    function giohang2(){
+       var a = document.getElementById("can2");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Cafe with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang3(){
+       var a = document.getElementById("can3");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Lemon with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang4(){
+       var a = document.getElementById("can4");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Lemon with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang5(){
+       var a = document.getElementById("can5");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi True with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang6(){
+       var a = document.getElementById("can6");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Diet with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang7(){
+       var a = document.getElementById("can7");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi RealSugar Soft Drink with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    function giohang8(){
+       var a = document.getElementById("can8");
+       var b = a.value;
+       var c = 2;
+       var d = c*b;
+       
+       var e = confirm("Do you want to buy Pepsi Diet with amount: " +b+ "and total pride is $" +d );
+       console.log(e);
+       
+    }
+    </script>
+</body>
+</html>

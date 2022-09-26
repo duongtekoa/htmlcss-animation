@@ -1,0 +1,654 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -5px;
+    
+}
+/* mở đầu phần nav */
+nav{
+    width: 1491px;
+    height: 100px;
+    background-color: #17a2d9;
+    position: relative;
+    position: relative;
+    margin-top: -7px;
+    letter-spacing: 1.5px;
+}
+nav img{
+    width: 120px;
+    height: 100px;
+    
+}
+
+#menu{
+    width: 1092px;
+    height: 100px;
+    background-color: #fd5b60;
+    position: absolute;
+    top: 0px;
+    left: 400px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    padding-left: 30px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li a:hover{
+    
+    color: #005891;
+}
+
+#join img{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#join{
+    width: 120px;
+    height: 100px;
+    position: relative;
+    
+    position: fixed;
+    top:0px;
+    right: 0px;
+    animation-name: xoay;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    z-index: 5;
+}
+
+@keyframes xoay{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#st_form{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 600px;
+    height: 700px;
+    background-color: #eddd70;
+    z-index: 5;
+    color: #005891;
+    padding-left: 30px;
+    padding-top: 100px;
+    display: none;
+    opacity: 0.8;
+}
+
+#st_form  .material-icons{
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 75px;
+}
+
+#st_form form, h2{
+    position: relative;
+    bottom: 50px;
+}
+
+#text input{
+    background-color: white;
+    
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    
+}
+
+#lastname , #phone , #state , .ln , .phone , .st{
+    position: relative;
+    left: 300px;
+    bottom: 52px;
+} 
+
+
+
+#js{
+    position: absolute;
+    top: 26px;
+    left: 34px;
+}
+#join #js, img:hover{
+    cursor: pointer;
+}
+
+#sm{
+    background-color: #17a2d9;
+    position: relative;
+    top:20px;
+    left: 250px;
+}
+/* Hết phần nav 
+đến phần banner */
+
+#anh{
+    width: 1491px;
+    height: 786px;
+    position: relative;
+}
+#anh1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fd5b60;
+    position: absolute;
+    bottom: 5px;
+    left: 700px;
+}
+#anh2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fd5b60;
+    position: absolute;
+    bottom: 5px;
+    left: 730px;
+}
+#anh3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fd5b60;
+    position: absolute;
+    bottom: 5px;
+    left: 760px;
+}
+#anh4{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fd5b60;
+    position: absolute;
+    bottom: 5px;
+    left: 790px;
+}
+
+/* Hết phần section banner 
+đến phần section2 */
+
+#st_2{
+    width: 1491px;
+    height: 500px;
+    background-color: #eddd70;
+    position: relative;
+    margin-top: -5px;
+    
+}
+
+#st_2 h2{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+#st_2 p{
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+#st_2 a{
+    position: absolute;
+    top: 380px;
+    left: 120px;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 110px;
+    height: 20px;
+    padding: 15px 15px;
+    background-color: #fd5b60;
+    color: #005891;
+}
+
+#st_2 img{
+    position: absolute;
+    width: 200px;
+    top:100px;
+    right: 200px;
+    transform: rotate(20deg);
+    animation-name: lac;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+
+@keyframes lac{
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+/* Hết phần section 2 
+đến phần section 3 */
+
+#st_3{
+    width: 1491px;
+    height: 786px;
+    background-color: #17a2d9;
+    
+}
+
+#st_3{position: relative;}
+#st_3 h2{
+    position: absolute;
+    top:100px;
+    left: 40%;
+}
+
+
+#st_3 a{
+text-decoration: none;
+border: 1px solid black;
+width: 130px;
+height: 20px;
+padding: 15px 15px;
+background-color: #fd5b60;
+color: #005891;
+position: absolute;
+bottom: 30px;
+left: 45%;
+}
+
+#wrapper{
+    width: 1150px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    top: 300px;
+}
+        
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    
+    margin-left: 58px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.anh{
+    width: 300px;
+    height: 300px;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    top: 250px;
+    right: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 300PX;
+}
+
+#icl{
+    position: absolute;
+    left: 0px;
+    top: 110px;
+}
+#icr{
+    position: absolute;
+    right: 0px;
+    top: 110px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+#a1 , #a2 , #a3 , #a4 , #a5 , #a6 , #a7 , #a8 , #a9, #a10{display: none;}
+
+#z1:hover{
+    animation-name: phongto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes phongto{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.8);}
+}
+
+/* kết thúc phần section 3
+đến phần section 4 */
+
+#st_4{
+        height: 100vh;
+        width: 1491px;
+        position: relative;
+}
+    #nendo{
+        background-color: #fd5b60;
+        width: 50%;
+        height: 100vh;
+    }
+
+    #nendo{position: relative;}
+    #nendo img{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 300px;
+        
+    }
+
+    #nhamay{
+        width: 1491px;
+        height: 786px;
+        position: absolute;
+        top:0px;
+        z-index: -1;
+        position: fixed;
+        top: 0px;
+        
+        
+    }
+    
+    /* kết thúc phần section 4
+    mở đầu phần section 5 */
+
+    #st_5{
+        background-color: #17a2d9;
+        width: 1491px;
+        height: 100vh;
+        position: relative;
+    }
+    #st_5 h2{
+        position: absolute;
+        top:20px;
+        left: 45%;
+    }
+
+    
+    #ct1 {
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border: 1px solid red;
+        position: absolute;
+        top: 110px;
+        left: 15%;
+    }
+    #ct2 {
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border: 1px solid red;
+        position: absolute;
+        top: 110px;
+        left: 40%;
+    }
+    #ct3 {
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border: 1px solid red;
+        position: absolute;
+        top: 110px;
+        left: 65%;
+    }
+    #ct1 img{
+        width: 300px;
+        position: absolute;
+        top: 0px;
+    }
+    #ct2 img{
+        width: 300px;
+        height: 160px;
+        position: absolute;
+        top: 0px;
+    }
+    #ct3 img{
+        width: 300px;
+        height: 160px;
+        position: absolute;
+        top: 0px;
+    }
+    h4{
+        position: absolute;
+        top: 150px;
+        border-bottom: 1px solid black;
+        font-size: 25px;
+        color: black;
+    }
+     #ct1 #aa1{
+        position: absolute;
+        bottom: 5px;
+        left: 40%;
+    }
+    #ct1 #bb1{
+        position: absolute;
+        bottom: 5px;
+        left: 15%;
+    }
+    #ct1 #cc1{
+        position: absolute;
+        bottom: 5px;
+        left: 65%;
+    }
+    #ct2 #aa2{
+        position: absolute;
+        bottom: 5px;
+        left: 40%;
+    }
+    #ct2 #bb2{
+        position: absolute;
+        bottom: 5px;
+        left: 15%;
+    }
+    #ct2 #cc2{
+        position: absolute;
+        bottom: 5px;
+        left: 65%;
+    }
+    #ct3 #aa3{
+        position: absolute;
+        bottom: 5px;
+        left: 40%;
+    }
+    #ct3 #bb3{
+        position: absolute;
+        bottom: 5px;
+        left: 15%;
+    }
+    #ct3 #cc3{
+        position: absolute;
+        bottom: 5px;
+        left: 65%;
+    }
+
+    #st_5 #vm{
+        text-decoration: none;
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    padding: 15px 25px;
+    background-color: #fd5b60;
+    color: #005891;
+    position: absolute;
+    bottom: 190px;
+    left: 45%;
+    }
+
+    /* kết thúc phần section5
+    mở đầu phần footer */
+
+    footer{
+        background-color: #fd5b60;
+        width: 1491px;
+        height: 100vh;
+        position: relative;
+    }
+    #khung{
+        width: 700px;
+        height: 300px;
+        background-color: #eddd70;
+        position: absolute;
+        left: 25%;
+        top: -150px;
+        position: relative;
+    }
+    #khung h3{
+        
+        position: absolute;
+        top:20px;
+        left: 15%;
+    }
+    #khung p{
+        font-size: 14px;
+        position: relative;
+        top:15px;
+        left: 45px;
+    }
+    #khung i{
+        position: relative;
+        top: 60px;
+    }
+    footer img{
+        position: absolute;
+        top: 150px;
+        left: 250px;
+    }
+    footer form{
+        position: absolute;
+        left: 35%;
+        top:300px;
+    }
+    footer label{
+        font-size: 30px;
+    }
+    footer input{
+        width: 300px;
+        height: 30px;
+    }
+    footer button{
+        height: 40px;
+        width: 80px;
+    }
+    footer input:hover{
+        border: 2px solid #005891;
+    }
+    footer button:hover{
+        background-color: #005891;
+    }
+    
+    #fb{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 400px;
+        left: 20%;
+    }
+    #zl{
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 430px;
+        left: 45%;
+    }
+    #tw{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 420px;
+        left: 65%;
+    }
+    #end{
+        position: absolute;
+        left: 40%;
+        bottom: 10px;
+    }
+    #chon{
+        border: 1px solid #005891;
+        width: 400px;
+    }
+
+    
+  
+    
+
+   #st1{
+       background-color: black;
+       width: 100vw;
+       height: 100vh;
+       position: relative;
+       display: none;
+       position: fixed;
+       top:0px;
+       left: 0px;
+       opacity: 0.9;
+       z-index: 5;
+   }
+   #st1 #doanvan{
+       position: absolute;
+       top:220px;
+       left: 800px;
+       background-color: #fd5b60;
+       width: 500px;
+
+   }
+   #if1 img{
+    position: absolute;
+    top:220px;
+    left: 20%;
+   }
+   #h11{
+       position: absolute;
+       top: 10px;
+       left: 45%;
+       color: #eddd70;
+   }
+   #cl{
+       color: white;
+       background-color: #eddd70;
+       position: absolute;
+       left: 48%;
+       bottom: 50px;
+   }
+   
+
+    
+    
+    
+
+
+    button:hover{
+        cursor: pointer;
+    }
